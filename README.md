@@ -1,124 +1,98 @@
-# Customer-Segmentation-Sales-Prediction-Pipeline
+# Customer Segmentation & Sales Prediction Pipeline
+
 End-to-end machine learning pipeline for customer segmentation and sales forecasting using K-Means, Decision Trees, and time-series models, integrated into an interactive Streamlit application.
-🚀 Project Overview
+
+---
+
+## 🚀 Project Overview
 
 The objective of this project is to:
 
-Identify distinct customer segments using behavioral and transactional data
+- Identify distinct customer segments using behavioral and transactional data
+- Predict customer cluster membership using supervised learning
+- Forecast future sales trends using time-series models
+- Integrate models into an interactive application for real-time insights
 
-Predict customer cluster membership using supervised learning
+This project demonstrates practical ML pipeline design, model validation, and deployment readiness.
 
-Forecast future sales trends using time-series models
+---
 
-Integrate models into an interactive application for real-time insights
-
-The project demonstrates practical ML pipeline design, model validation, and deployment readiness.
-
-📂 Dataset
+## 📂 Dataset
 
 Customer transactional and behavioral dataset including:
 
-Spending patterns
+- Spending patterns
+- Credit utilization
+- Payment behavior
+- Sales records
 
-Credit utilization
+### Preprocessing Included
 
-Payment behavior
+- Missing value handling
+- Feature scaling (StandardScaler)
+- Dimensionality reduction (PCA)
 
-Sales records
+---
 
-Preprocessing included:
+## 🧠 Models Implemented
 
-Missing value handling
+### 🔹 Unsupervised Learning
+- K-Means Clustering
+- Elbow Method for cluster optimization
+- PCA-based visualization
 
-Feature scaling (StandardScaler)
+### 🔹 Supervised Learning
+- Decision Tree Classifier (Entropy-based)
+- Train/Test split validation
+- Model persistence using Pickle
 
-Dimensionality reduction (PCA)
+### 🔹 Sales Forecasting
+- Random Forest Regression
+- Prophet Time-Series Forecasting
+- MAE-based evaluation
+- Trend & seasonality modeling
 
-🧠 Models Implemented
-🔹 Unsupervised Learning
+---
 
-K-Means Clustering
+## ⚙️ Pipeline Workflow
 
-Optimal cluster selection using Elbow Method
+1. Data Cleaning & Feature Engineering  
+2. Feature Scaling & PCA  
+3. K-Means Segmentation  
+4. Supervised Cluster Prediction  
+5. Sales Forecasting  
+6. Model Serialization  
+7. Streamlit Integration  
 
-PCA-based visualization of clusters
+---
 
-🔹 Supervised Learning
+## 📊 Model Evaluation
 
-Decision Tree Classifier (Entropy-based)
+- Accuracy (Classification)
+- Mean Absolute Error (Forecasting)
+- Elbow Method
+- Train/Test Validation
 
-Predicts customer segment
+---
 
-Train/Test split validation
+## 🖥 Deployment
 
-Model persistence using Pickle
+Integrated into a Streamlit application enabling:
 
-🔹 Sales Forecasting
+- Real-time cluster prediction
+- Customer behavior visualization
+- Sales forecast exploration
 
-Random Forest Regression
+---
 
-Prophet Time-Series Forecasting
+## 🛠 Tech Stack
 
-MAE-based evaluation
+Python | Pandas | NumPy | Scikit-learn | Prophet | Matplotlib | Seaborn | Streamlit
 
-Trend and seasonality modeling
+---
 
-⚙️ Pipeline Workflow
+## 📈 Key Outcomes
 
-Data Cleaning & Feature Engineering
-
-Feature Scaling & PCA
-
-K-Means Segmentation
-
-Supervised Cluster Prediction
-
-Sales Forecasting
-
-Model Serialization (Joblib / Pickle)
-
-Integration into Streamlit App
-
-📊 Model Evaluation
-
-Elbow Method (Cluster optimization)
-
-Accuracy (Classification)
-
-Mean Absolute Error (Forecasting)
-
-Train/Test Validation Split
-
-🖥 Deployment
-
-The models are integrated into a Streamlit-based interactive application allowing:
-
-Real-time cluster prediction
-
-Customer behavior visualization
-
-Sales forecast exploration
-
-🛠 Tech Stack
-
-Python
-
-Pandas, NumPy
-
-Scikit-learn
-
-Prophet
-
-Matplotlib / Seaborn
-
-Streamlit
-
-Joblib / Pickle
-
-📈 Key Outcomes
-
-Built reusable ML pipeline for segmentation and prediction
-
-Automated model persistence for scalable inference
-
-Enabled interactive, real-time business insights
+- Built reusable ML pipeline for segmentation and prediction
+- Automated model persistence for scalable inference
+- Delivered interactive, real-time analytics
